@@ -1,0 +1,205 @@
+body {
+    background: #282828;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 25px;
+    font-size: 75px;
+}
+
+.container {
+    background: #0C7C59;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    border-radius: 20%;
+    padding: 10px;
+    border: solid #6B5200 8px;
+}
+.message {
+    width: 500px;
+    margin: 15px auto;
+    padding: 15px;
+    text-align: center;
+    border-radius: 25px;
+    color: #BAC1B8;
+    font-size: 50px;
+}
+
+.winner-msg {
+    color: red;
+    background: white;
+}
+
+.players {
+    display: flex;
+}
+
+.dice-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.dice {
+    padding: 15px;
+    display: flex;
+}
+.die {
+    width: 100px;
+    height: 100px;
+    background: #E3CCB4;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: unset;
+    font-size: 85px;
+    text-align: center;
+}
+
+.play-btns {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.btn { 
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+
+    visibility: visible;
+    padding: 8px 15px;
+    border-radius: 10px;
+    /* border: unset; */
+    outline: none;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #D64933;
+    
+}
+
+/* #rollBtn {
+    display: inline-block;
+    margin: 0 auto;
+} */
+
+#resetBtn {
+    visibility: hidden;
+    /* margin-top:10px; */
+}
+
+.emoji {
+    font-weight: normal;
+}
+
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    color: #2B303A;
+    
+}
+
+.player1{
+    margin-left: 25px;
+    padding: 25px;
+    
+}
+
+.player2 {
+    margin-right: 25px;
+    padding: 25px;
+    
+}
+
+.roll {
+    margin-bottom: 10px;
+}
+
+.active {
+    background: #bac1b869;
+    border-radius: 15px;;
+}
+
+.messages {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    
+}
+
+
+
+.message-3 {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    height: 1em;
+
+}
+
+
+.title {
+    color: #0C7C59;
+}
+
+.rules-title {
+    text-align: center;
+    color: #0C7C59;
+}
+
+.rules {
+    visibility: hidden;
+    position: absolute;
+    width: 400px;
+    line-height: 35px;
+    font-size: 20px;
+    color: #BAC1B8;
+}
+
+.rules-btn {
+    margin: 150px 0;
+    position: absolute;
+    top: 100%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background: #0C7C59;
+    color: black;
+    border: unset;
+    outline: none;
+}
+
+#rulesBtnHide {
+    visibility: hidden;
+}
+
+#rulesBtnShow {
+    background: #0c7c5815;
+    visibility: visible;
+}
+

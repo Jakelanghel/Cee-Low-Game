@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Low</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 class="title">Cee-lo</h1>
+    <div id="rules" class="rules">
+        <h2 class="rules-title">The rules:</h2>
+        <ul>
+            <li>First to 10 wins the game.</li>
+            <li>If a pair is rolled the odd die is the point value. Possible point values range from 1 to 6.</li>
+            <li>Trips of any number beat any pair.</li>
+            <li>If player rolls a 4 5 6 they automatically win the round.</li>
+            <li>If a player rolls a 1 2 3 they automatically loose the round and must give the 
+                opposing player a point form their score.</li>
+        </ul>
+        <button id="rulesBtnHide" class="rules-btn">Click to hide rules.</button>
+        <button id="rulesBtnShow" class="rules-btn">Click to view rules.</button>
+    </div>
+    <div class="container">
+        <h2 id="msg" class="message">Player 1 Turn</h2>
+        <div class="dice-container">
+            <div class="dice">
+                <div class="die" id="die1">
+    
+                </div>
+                <div class="die" id="die2">
+                    
+                </div>
+                <div class="die" id="die3">
+    
+                </div>
+            </div>
+        </div>
+        <div class="play-btns">
+            <button class="btn" id="rollBtn">Roll Dice <span class="emoji">🎲</span></button>
+            <button class="btn" id="resetBtn">Reset Game <span class="emoji">🔁</span></button>
+        </div>
+        
+
+        <div class="score-board">
+
+            <div class="player1 active">
+
+                <h2 class="roll">Player 1 roll: 
+                    <span id="p1roll">0</span>
+                </h2>
+
+                <h2 class="s-b">Player 1 score: 
+                    <span id="p1ScoreBoard">0</span>
+                </h2>
+                
+               
+            </div>
+            <div class="player2">
+
+                <h2 class="roll">Player 2 roll: 
+                    <span id="p2roll">0</span>
+                </h2>
+
+                <h2 class="s-b">Player 2 score: 
+                    <span id="p2ScoreBoard">0</span>
+               </h2>
+               
+            </div>
+        </div>
+
+        <h2 id = msg3 class = "message-3"></h2>
+
+        <div class="messages">
+            <h2 id = msg1 class = "message-1"></h2>
+            <h2 id = msg2 class = "message-2"></h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
